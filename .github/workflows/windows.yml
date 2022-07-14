@@ -74,8 +74,8 @@ jobs:
       run: xmake.exe
 
     # Create install
-    #- name: Bundle package
-    #  run: xmake.exe install -o packaged
+    - name: Bundle package
+      run: xmake.exe install -o packaged
 
     # Upload artifacts
     - uses: actions/upload-artifact@v2
